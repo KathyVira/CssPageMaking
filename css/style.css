@@ -17,7 +17,8 @@ body {
     /* min-width: 500px; */
 }
 
-a {
+a,
+p a {
     text-decoration: none;
 }
 
