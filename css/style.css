@@ -557,6 +557,29 @@ section .article-box4 {
     }
 }
 
+strong.trends {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    /* .section-box4 {
+        width: 100%;
+    } */
+
+    /* .container-freshstyle-banner {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    } */
+
+    .fresh-style {
+        position: relative;
+    }
+}
+
 .container-box4 {
     display: flex;
     justify-content: center;
