@@ -7,12 +7,14 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 100%;
     vertical-align: baseline;
+    /* min-width: 500px; */
 }
 
 *,
 *:before,
 *::after {
     box-sizing: border-box;
+    /* min-width: 500px; */
 }
 
 a {
@@ -41,9 +43,9 @@ h6 {
     margin: 0 auto;
 }
 
-/* .header {
-     background-color: #f8f8f8; 
-} */
+.container-freshstyle-banner {
+    display: flex;
+}
 
 .logo {
     display: flex;
@@ -102,8 +104,7 @@ h6 {
 .men-btn {
 
     color: rgb(35, 35, 35);
-    font-size: 13px;
-    margin: 9px 0;
+
     text-transform: uppercase;
 }
 
@@ -129,7 +130,10 @@ h6 {
     /* You must set a specified height */
     background-position: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 14px;
+    -webkit-box-decoration-break: clone;
+
+    min-width: 50%;
     /* font-family: FuturaStd, Helvetica, Arial, sans-serif */
 }
 
@@ -219,10 +223,7 @@ h6 {
     vertical-align: center;
 }
 
-nav ul li {
-    /* background-color: #666; */
-    /* color: white; */
-}
+
 
 nav ul li a:hover {
     background-color: white;
@@ -369,12 +370,12 @@ article p {
     text-align: center;
 }
 
-.category-box-4,
-.category-box-4 article strong {
+/* .category-box-4, */
+/* .category-box-4 article strong {
     text-align: center;
     font-size: 1.2rem;
     padding-top: 80px;
-}
+} */
 
 article .title {
     font-size: 18px;
@@ -391,6 +392,13 @@ article .title-big {
 .article-big-banner {
     text-align: center;
     padding-bottom: 30px;
+    /* padding-left: 50px; */
+}
+
+.article-big-banner1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 50px;
 }
 
 .title p {
@@ -399,7 +407,7 @@ article .title-big {
     padding: 5px;
 }
 
-.box-4,
+/* .box-4, */
 .box-5,
 .box-6 {
     display: flex;
@@ -412,14 +420,14 @@ article .title-big {
     height: 100px;
 }
 
-.box-4 {
+/* .box-4 {
     display: flexbox;
     justify-content: space-between;
     text-align: center;
     padding: 50px;
-    /* height: 550px; */
+    height: 550px; 
 
-}
+} */
 
 .category-big-banners {
     display: flexbox;
@@ -435,6 +443,10 @@ article .title-big {
     padding: 9px 14px;
 }
 
+.strong-col {
+    font-size: calc(5px + 1vw);
+}
+
 .span {
     margin: 15px;
     text-transform: uppercase;
@@ -444,18 +456,25 @@ article .title-big {
     font-size: 20px;
 }
 
-.category-box-4 {
+/* .category-box-4 {
     padding: 10px;
-    /* height: 550px; */
-}
+    /* height: 550px; 
+} */
 
 .category-big-banners {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 section article {
-    padding-left: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
+
+section .article-box4 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
 
 .trends {
     display: flex;
@@ -481,9 +500,7 @@ section article {
     color: #666;
 }
 
-.copy-help {
-    margin: 0 50px 0;
-}
+
 
 .help-list {
     margin: 15px 0 0;
@@ -519,8 +536,8 @@ section article {
 
 @media screen and (max-width: 900px) {
 
-    .box-4,
-    .category-box-4,
+    /* .box-4, */
+    /* .category-box-4, */
     .big-banner-section {
         flex-direction: column;
         width: 100%;
@@ -537,5 +554,67 @@ section article {
 @media screen and (max-width: 770px) {
     .copy-footer {
         display: none;
+    }
+}
+
+strong.trends {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    /* .section-box4 {
+        width: 100%;
+    } */
+
+    /* .container-freshstyle-banner {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    } */
+
+    .fresh-style {
+        position: relative;
+    }
+}
+
+.container-box4 {
+    display: flex;
+    justify-content: center;
+}
+
+/* .row-box4 {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; */
+
+/* } */
+
+.section-box4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.category-box-4 {
+    width: 25%;
+}
+
+@media screen and (max-width: 1050px) {
+    .category-box-4 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .category-box-4 {
+        width: 100%;
     }
 }
